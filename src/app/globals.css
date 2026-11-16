@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-navy: #081930;
+  --secondary-navy: #102B49;
+  --metallic-gold: #D3AA5B;
+  --champagne-gold: #F1DCAE;
+  --ivory: #F9F7F1;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #081930;
+  color: #F9F7F1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Luxury gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F1DCAE 0%, #D3AA5B 50%, #C49842 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury border with subtle gold glow */
+.border-gold-subtle {
+  border-color: rgba(211, 170, 91, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(211, 170, 91, 0.55);
+  box-shadow: 0 0 15px rgba(211, 170, 91, 0.2);
+}
+
+/* Glassmorphism card for navy backdrop */
+.navy-glass {
+  background: rgba(16, 43, 73, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(211, 170, 91, 0.2);
+}
+
+.navy-glass-card {
+  background: linear-gradient(180deg, rgba(16, 43, 73, 0.85) 0%, rgba(8, 25, 48, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(211, 170, 91, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navy-glass-card:hover {
+  border-color: rgba(211, 170, 91, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(8, 25, 48, 0.9), 0 0 20px rgba(211, 170, 91, 0.15);
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #081930;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B3B60;
+  border-radius: 4px;
+  border: 1px solid rgba(211, 170, 91, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D3AA5B;
+}
+
+/* Gold button hover effects */
+.btn-gold {
+  background: linear-gradient(135deg, #D3AA5B 0%, #C49842 100%);
+  color: #081930;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 15px rgba(211, 170, 91, 0.3);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #F1DCAE 0%, #D3AA5B 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 170, 91, 0.45);
+}
+
+.btn-navy-outline {
+  background: transparent;
+  color: #F1DCAE;
+  border: 1px solid #D3AA5B;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-navy-outline:hover {
+  background: rgba(211, 170, 91, 0.12);
+  border-color: #F1DCAE;
+  color: #FFFFFF;
+}
